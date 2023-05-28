@@ -33,19 +33,22 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Simone Olivia,</span> a Web
-              Developer
+              I'm <span className="text-primary">Nathason Reangroum</span> a Software Engineer.
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+              Birthday: 28 April 1997
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              Sex: Mela
+            </p>
+            <p className={darkTheme ? "text-white-50" : ""}>
+              Relationship: have a sweetheart
+            </p>
+            <p className={darkTheme ? "text-white-50" : ""}>
+              Phone: 06-3091-6392
+            </p>
+            <p className={darkTheme ? "text-white-50" : ""}>
+              Feature: Enthusiastic , strive , Ready to learn new things , responsible
             </p>
           </div>
           {/* About me content end */}
@@ -59,18 +62,20 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 }
               >
                 <li>
-                  <span className="fw-600 me-2">Name:</span>Simone Olivia
+                  <span className="fw-600 me-2">Name:</span>Nathasorn Reangroum
                 </li>
                 <li>
                   <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:chat@simone.com">chat@simone.com</a>
+                  <a href="mailto:chat@Nathasorn.com">zgmfx2oaftrikefreedom@gmail.com</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age:</span>28
+                  <span className="fw-600 me-2">Age:</span>26
+                </li>
+                <li>
+                  <span className="fw-600 me-2">Phone:</span>06-3091-6392
                 </li>
                 <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Los Angeles,
-                  California
+                  <span className="fw-600 me-2">From:</span>Bangkok,Thailand
                 </li>
               </ul>
               <a
@@ -100,7 +105,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>10</span>+
+                  <span>3</span>+
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
                   Years Experiance

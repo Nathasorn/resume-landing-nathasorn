@@ -24,13 +24,13 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             <span className="bg-dark-2 rounded-pill p-2 mb-lg-1 d-none d-lg-inline-block">
               <img
                 className="img-fluid rounded-pill d-block"
-                src="images/profile.jpg"
+                src="images/profile.png"
                 title="I'm Nathasorn"
                 alt="profile"
               />
             </span>
             <h1 className="text-5 text-white text-center mb-0 d-lg-block">
-              Simone Olivia
+              Nathasorn
             </h1>
           </Link>
           {/* Logo End */}
@@ -86,23 +86,6 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="services"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsNavModalClose(true);
-                  }}
-                >
-                  What I Do
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link "
-                  smooth
-                  duration={500}
-                  style={{ cursor: "pointer" }}
-                  activeClass="active"
-                  spy
                   to="resume"
                   onClick={(e) => {
                     e.preventDefault();
@@ -137,23 +120,6 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="testimonial"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsNavModalClose(true);
-                  }}
-                >
-                  Testimonial
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link "
-                  smooth
-                  duration={500}
-                  style={{ cursor: "pointer" }}
-                  activeClass="active"
-                  spy
                   to="contact"
                   onClick={(e) => {
                     e.preventDefault();
@@ -169,7 +135,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             <li className="social-icons-facebook">
               <Tooltip text="Facebook" placement="top">
                 <a
-                  href="http://www.facebook.com/"
+                  href="https://www.facebook.com/nathasotrn.reangroum/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -177,32 +143,32 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                 </a>
               </Tooltip>
             </li>
-            <li className="social-icons-twitter">
-              <Tooltip text="Twitter" placement="top">
+            <li className="social-icons-instagram a">
+              <Tooltip text="Instragram" placement="top">
                 <a
-                  href="http://www.twitter.com/"
+                  href="https://www.instagram.com/iamnathasorn/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-twitter" />
+                  <i className="fab fa-instagram a" />
                 </a>
               </Tooltip>
             </li>
-            <li className="social-icons-dribbble">
-              <Tooltip text="Dribbble" placement="top">
+            <li className="social-icons-skype a">
+              <Tooltip text="Skype" placement="top">
                 <a
-                  href="http://www.dribbble.com/"
+                  href="https://join.skype.com/invite/tDM0QPVXbONl/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-dribbble" />
+                  <i className="fab fa-skype a" />
                 </a>
               </Tooltip>
             </li>
             <li className="social-icons-github">
               <Tooltip text="Google" placement="top">
                 <a
-                  href="http://www.google.com/"
+                  href="https://github.com/Nathasorn/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

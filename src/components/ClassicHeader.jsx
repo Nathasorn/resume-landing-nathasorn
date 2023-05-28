@@ -44,14 +44,14 @@ const ClassicHeader = ({ handleNavClick }) => {
               style={{ cursor: "pointer" }}
               className="logo"
               to="home"
-              title="Simone"
+              title="Nathasorn"
               onClick={(e) => {
                 e.preventDefault();
                 setIsNavModalClose(true);
               }}
             >
               {" "}
-              <img src="images/logo-light.png" alt="Simone" />{" "}
+              <img src="images/profile.png" alt="profile" />{" "}
             </Link>
             {/* Logo End */}
           </div>
@@ -113,23 +113,6 @@ const ClassicHeader = ({ handleNavClick }) => {
                     }}
                   >
                     About
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    smooth
-                    duration={500}
-                    style={{ cursor: "pointer" }}
-                    spy
-                    activeClass="active"
-                    className="nav-link"
-                    to="services"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsNavModalClose(true);
-                    }}
-                  >
-                    What I Do
                   </Link>
                 </li>
                 <li className="nav-item">

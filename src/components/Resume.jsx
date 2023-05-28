@@ -4,77 +4,59 @@ import resumeFile from "../documents/resume.pdf";
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "2000 - 2004",
-      title: "Computer Science",
-      place: "International University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "03/08/2015 - 17/01/2020",
+      title: "Software Engineering",
+      place: "Nakhon Pathom Rajabhat University",
+      desc: "Web app development , Database system development , study object-oriented programming.",
     },
     {
-      yearRange: "2005 - 2008",
-      title: "Bachelor Degree",
-      place: "University of California",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2009 - 2012",
-      title: "Master Degree",
-      place: "Harvard University",
+      yearRange: "07/05/2018 - 31/07/2018",
+      title: "practice Experience",
+      place: "TOT Innovation",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2012 - 2013",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "17/01/2020 - 30/06/2023",
+      title: "Jr. Programmer",
+      place: "Expsystem Co.,Ltd.",
+      desc: "deploy project , support Sn. Programmer , Monitor server and Domain , create and edit frontend",
     },
   ];
 
   const skills = [
     {
       name: "Web Design",
-      percent: 65,
+      percent: 50,
     },
     {
       name: "HTML/CSS",
-      percent: 95,
-    },
-    {
-      name: "JavaScript",
-      percent: 80,
-    },
-    {
-      name: "React JS",
       percent: 70,
     },
     {
-      name: "Angular Js",
-      percent: 60,
+      name: "JavaScript",
+      percent: 65,
     },
     {
-      name: "Bootstrap",
-      percent: 99,
+      name: "React JS",
+      percent: 50,
+    },
+    {
+      name: "MySQL",
+      percent: 75,
+    },
+    {
+      name: "C#,C++",
+      percent: 55,
     },
   ];
 
   return (
     <section
       id="resume"
-      className={"section " + (darkTheme ? "bg-dark-1" : "")}
+      className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}

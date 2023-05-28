@@ -2,17 +2,13 @@ import "./App.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import AboutUs from "./components/About";
-import Services from "./components/Services";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import ClassicHeader from "./components/ClassicHeader";
 import { commonConfig } from "./config/commonConfig";
-import TermsAndConditions from "./components/TermsAndConditions";
-import Disclaimer from "./components/Disclaimer";
 import PreLoader from "./components/Preloader";
 import { Tooltip } from "./components/Tooltip";
 
@@ -79,10 +75,6 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></AboutUs>
-            <Services
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Services>
             <Resume
               classicHeader={classicHeader}
               darkTheme={darkTheme}
@@ -91,10 +83,6 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Portfolio>
-            <Testimonials
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Testimonials>
             <Contact
               classicHeader={classicHeader}
               darkTheme={darkTheme}
@@ -119,9 +107,6 @@ function App() {
             <i className="fa fa-chevron-up"></i>
           </span>
         </Tooltip>
-
-        <TermsAndConditions darkTheme={darkTheme}></TermsAndConditions>
-        <Disclaimer darkTheme={darkTheme}></Disclaimer>
       </div>
     </>
   );
