@@ -262,7 +262,7 @@ html[dir="rtl"] .side-header {
 }
 
 .sticky-on.bg-transparent:not(.navbar-dark), .sticky-top .sticky-on-top.bg-transparent:not(.navbar-dark){background-color:$white !important; border-bottom:1px solid #efefef!important;}
-.sticky-on.navbar-dark.bg-transparent, .sticky-top .sticky-on-top.navbar-dark.bg-transparent{background-color:#111 !important; @include box-shadow(0px 0px 10px rgba(250, 250, 250, 0.03)); border-bottom:none!important;}
+.sticky-on.navbar-dark.bg-transparent, .sticky-top .sticky-on-top.navbar-dark.bg-transparent{background-color:#000000 !important; @include box-shadow(0px 0px 10px rgba(0, 0, 0, 0.03)); border-bottom:none!important;}
 
 /* Hamburger Menu Button */
 .navbar-toggler {

@@ -91,11 +91,13 @@ const Contact = ({ classicHeader, darkTheme }) => {
               Address
             </h2>
             <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
-              4th Floor, Plot No.22,
+              594/659 Condo P. Pinklao,
               <br />
-              145 Murphy Canyon Rd.
+              Khlong Chak Phra Subdistrict,
               <br />
-              San Diego CA 2028
+              Taling Chan District,
+              <br />
+              Bangkok 10170
             </p>
             <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-4 me-2">
@@ -122,54 +124,43 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "social-icons-muted" : "")
               }
             >
-              <li className="social-icons-dribbble">
-                <Tooltip text="Dribbble" placement="top">
-                  <a
-                    href="http://www.dribbble.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-dribbble" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-twitter">
-                <Tooltip text="Twitter" placement="top">
-                  <a
-                    href="https://twitter.com/harnishdesign/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-twitter" />
-                  </a>
-                </Tooltip>
-              </li>
               <li className="social-icons-facebook">
                 <Tooltip text="Facebook" placement="top">
                   <a
-                    href="http://www.facebook.com/harnishdesign/"
+                    href="https://www.facebook.com/nathasotrn.reangroum/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-facebook-f" />
+                    <i className="fab fa-facebook" />
                   </a>
                 </Tooltip>
               </li>
-              <li className="social-icons-google">
-                <Tooltip text="Google" placement="top">
+              <li className="social-icons-instagram a">
+                <Tooltip text="Instragram" placement="top">
                   <a
-                    href="http://www.google.com/"
+                    href="https://www.instagram.com/iamnathasorn/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-google" />
+                    <i className="fab fa-instagram a" />
+                  </a>
+                </Tooltip>
+              </li>
+              <li className="social-icons-skype a">
+                <Tooltip text="Skype" placement="top">
+                  <a
+                    href="https://join.skype.com/invite/tDM0QPVXbONl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-skype a" />
                   </a>
                 </Tooltip>
               </li>
               <li className="social-icons-github">
                 <Tooltip text="Github" placement="top">
                   <a
-                    href="http://www.github.com/"
+                    href="https://github.com/Nathasorn/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -180,76 +171,6 @@ const Contact = ({ classicHeader, darkTheme }) => {
             </ul>
           </div>
           {/* contact form */}
-          <div className="col-md-8 col-xl-9 order-0 order-md-1">
-            <h2
-              className={
-                "mb-3 text-5 text-uppercase text-center text-md-start " +
-                (darkTheme ? "text-white" : "")
-              }
-            >
-              Send us a note
-            </h2>
-            <form
-              className={darkTheme ? "form-dark" : ""}
-              id="contact-form"
-              action="php/mail.php"
-              method="post"
-              ref={form}
-              onSubmit={sendEmail}
-            >
-              <div className="row g-4">
-                <div className="col-xl-6">
-                  <input
-                    name="user_name"
-                    type="text"
-                    className="form-control"
-                    required
-                    placeholder="Name"
-                  />
-                </div>
-                <div className="col-xl-6">
-                  <input
-                    name="user_email"
-                    type="email"
-                    className="form-control"
-                    required
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="col">
-                  <textarea
-                    name="message"
-                    className="form-control"
-                    rows={5}
-                    required
-                    placeholder="Tell us more about your needs........"
-                    defaultValue={""}
-                  />
-                </div>
-              </div>
-              <p className="text-center mt-4 mb-0">
-                <button
-                  id="submit-btn"
-                  className="btn btn-primary rounded-pill d-inline-flex"
-                  type="submit"
-                >
-                  {sendingMail ? (
-                    <>
-                      <span
-                        role="status"
-                        aria-hidden="true"
-                        class="spinner-border spinner-border-sm align-self-center me-2"
-                      ></span>
-                      Sending.....
-                    </>
-                  ) : (
-                    <>Send Message</>
-                  )}
-                </button>
-              </p>
-              <ToastContainer />
-            </form>
-          </div>
         </div>
       </div>
     </section>
