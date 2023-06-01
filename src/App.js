@@ -1,4 +1,5 @@
 import "./App.scss";
+import axios from "axios";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import AboutUs from "./components/About";
@@ -19,6 +20,30 @@ function App() {
   const handleNavClick = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
   };
+
+  const [poke, setPoke] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  useEffect(() => {
+    let abortController = new AbortController();
+    const loadpoke = async () => {
+      try {
+        setLoading(true);
+        let response = await axios.get('https://pokeapi.co/api/v2/pokemon/1', {
+          signal: abortController.signal,
+        });
+        setPoke(response.data);
+        setError("");
+      } catch (error) {
+        setError("Something went wrong", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    return () => abortController.abort();
+  }, []);
+  loadpoke();
+  console.log(poke);
 
   const [scrollTopVisible, setScrollTopVisible] = useState(false);
   const [isLoading, setisLoading] = useState(true);
