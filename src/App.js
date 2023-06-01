@@ -29,7 +29,7 @@ function App() {
     const loadpoke = async () => {
       try {
         setLoading(true);
-        let response = await axios.get('https://pokeapi.co/api/v2/pokemon/1', {
+        let response = await axios.get(`https://pokeapi.co/api/v2/ability?limit=1`, {
           signal: abortController.signal,
         });
         setPoke(response.data);
