@@ -6,6 +6,8 @@ import AboutUs from "./components/About";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Apiability1 from "./components/Apiability1";
+import Apipokemon2 from "./components/Apipokemon2";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import ClassicHeader from "./components/ClassicHeader";
@@ -20,30 +22,6 @@ function App() {
   const handleNavClick = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
   };
-
-  const [poke, setPoke] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  useEffect(() => {
-    let abortController = new AbortController();
-    const loadpoke = async () => {
-      try {
-        setLoading(true);
-        let response = await axios.get(`https://pokeapi.co/api/v2/ability?limit=1`, {
-          signal: abortController.signal,
-        });
-        setPoke(response.data);
-        setError("");
-      } catch (error) {
-        setError("Something went wrong", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    return () => abortController.abort();
-  }, []);
-  loadpoke();
-  console.log(poke);
 
   const [scrollTopVisible, setScrollTopVisible] = useState(false);
   const [isLoading, setisLoading] = useState(true);
@@ -112,6 +90,14 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Contact>
+            <Apiability1
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></Apiability1>
+            <Apipokemon2
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></Apipokemon2>
           </div>
           <Footer
             classicHeader={classicHeader}
