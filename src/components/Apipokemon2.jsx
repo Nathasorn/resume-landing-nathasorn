@@ -12,7 +12,7 @@ const Apipokemon2 = ({ classicHeader, darkTheme }) => {
     const loadditto = async () => {
       try {
         setLoading(true);
-        let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/ditto`, {
+        let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/pikachu`, {
           signal: abortController.signal,
         });
         setDitto(response.data);
@@ -33,7 +33,7 @@ const Apipokemon2 = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="apipokemon2"
-      className={"section " + (darkTheme ? "bg-dark-" : "bg-light")}
+      className={"section " + (darkTheme ? "bg-dark-1" : "")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
@@ -44,7 +44,7 @@ const Apipokemon2 = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >
-            Api Pokemon Ditto
+            Pokemon
           </h2>
           <p
             className={
@@ -73,26 +73,18 @@ const Apipokemon2 = ({ classicHeader, darkTheme }) => {
                 "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
               }
             >
-              <img src={ditto?.sprites?.orher?.home.front_default} alt={ditto?.name} />
+              <img width="200" height ="200" src={ditto?.sprites?.other?.home?.front_default} alt={ditto?.name} />
             </h2>
             <h2
               className={
                 "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
               }
             >
-              <img width="xx" height ="xx" src={ditto?.sprites?.orher?.home.front_default} alt={ditto?.name} />
-            </h2>
-            <h2
-              className={
-                "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
-              }
-            >
-              
               {ditto?.abilities?.map((abil , idx) => (
                 <li key={idx}>{abil.ability.name}</li>
               ))}
-            
             </h2>
+            
           </div>
           {/* contact form */}
         </div>

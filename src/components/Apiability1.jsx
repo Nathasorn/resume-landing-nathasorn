@@ -33,7 +33,7 @@ const Apiability1 = ({ classicHeader, darkTheme }) => {
   return (
     <section
       id="apiability1"
-      className={"section " + (darkTheme ? "bg-dark-1" : "")}
+      className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
@@ -44,7 +44,7 @@ const Apiability1 = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
             }
           >
-            Api Ability Pokemon
+            Ability
           </h2>
           <p
             className={

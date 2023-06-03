@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Apiability1 from "./components/Apiability1";
 import Apipokemon2 from "./components/Apipokemon2";
+import Allpokemon from "./components/Allpokemon";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import ClassicHeader from "./components/ClassicHeader";
@@ -90,14 +91,18 @@ function App() {
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Contact>
-            <Apiability1
+            <Allpokemon
               classicHeader={classicHeader}
               darkTheme={darkTheme}
-            ></Apiability1>
+            ></Allpokemon>
             <Apipokemon2
               classicHeader={classicHeader}
               darkTheme={darkTheme}
             ></Apipokemon2>
+            <Apiability1
+              classicHeader={classicHeader}
+              darkTheme={darkTheme}
+            ></Apiability1>
           </div>
           <Footer
             classicHeader={classicHeader}
